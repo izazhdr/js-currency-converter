@@ -1,0 +1,161 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d47a1; /* Dark teal background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+.selector-main {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 64px;
+}
+
+.selector-main img {
+  margin-left: 10px;
+}
+
+.dropdown-title {
+  color: #1a237e;
+  display: block;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-title {
+  color: #1a237e;
+}
+
+.form-section,
+.results-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section h2 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.results-section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#currency-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.currency-label {
+  color: #1a237e;
+}
+
+.base-currency-input {
+  margin-bottom: 20px;
+}
+
+#currency-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#get-rates-btn {
+  margin-top: 20px;
+
+  background-color: #1a237e; /* Dark blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#get-rates-btn:hover {
+  background-color: #00095e;
+}
+
+#get-rates-btn:active {
+  background-color: #3e48b3;
+}
+
+.results-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 110px;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.result-title {
+  margin-left: 10px;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.primary-result {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10px;
+}
+
+.secondary-result {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+}
+
+.currency-code,
+.currency-rate {
+  color: #1a237e;
+  display: inline;
+}
+
+.currency-code-primary,
+.currency-rate-primary {
+  margin-bottom: 10px;
+}
